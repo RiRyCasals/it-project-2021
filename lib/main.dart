@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(),
-      home: MyHomePage(title: 'TECH.C'),
+      home: MyHomePage(title: 'TECH.C.'),
     );
   }
 }
@@ -31,7 +31,17 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Colors.black,
         title: Text(widget.title),
       ),
-      body: Column(),
+      body: Center(
+        child: Column(
+          children: <Widget>[
+            new Image.asset(
+              'images/tech.png',
+              width: 400.0,
+              height: 400.0,
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
